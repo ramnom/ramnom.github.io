@@ -60,9 +60,15 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.14/es5-shim.min.js" integrity="sha512-K8jgcLulFpoNw1frLky8Mm12KVkxXJnV+iqSh/Tp1debwPHMFYkh1KOnDEFPQPdhC67QKLLqbPQtL+27omCBDw==" crossorigin="anonymous"></script>
       <script src="/assets/js/cms.min.js"></script>
       <script>
-         var blog = new CMS({
+         var config = {
            elementId: 'cms',
            mode: 'SERVER',
+           github: {
+             username: 'ramnom',
+             repo: 'ramnom.github.io',
+             branch: 'master',
+             host: 'https://api.github.com',
+           },
            layoutDirectory: 'layouts',
            errorLayout: 'error',
            defaultView: 'domains',
@@ -76,7 +82,8 @@
                blog.search('domains', 'title', e.target.value);
              });
            },
-         });
+         };
+		 var blog = CMS(config);
       </script>
    </body>
 </html>
