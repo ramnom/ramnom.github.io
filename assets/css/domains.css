@@ -1,5 +1,33 @@
 /*** RamNom Domains ***/
 
 body {
-  font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', Arial, sans-serif;
+}
+
+center {
+	padding: 1rem;
+}
+
+img {
+	max-width: 100%;
+}
+
+.button {
+	display: inline-block;
+	min-width: 150px;
+	padding: 0.75rem 2.5rem;
+	border: 1px solid #42d071;
+	border-radius: 0.25rem;
+	box-shadow: 0.125rem 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+	background-color: #42d071;
+	font-size: 1.25rem;
+	font-weight: bold;
+	color: #fff;
+	text-transform: capitalize;
+	text-decoration: none;
+}
+
+.button:hover,
+.button:active {
+	background-color: #3cb965;
 }
