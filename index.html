@@ -7,10 +7,10 @@
       <meta name="author" content="RamNom">
 	  <meta name="url" content="https://ramnom.com">
       <title>RamNom - Domains, Brands & Websites For Sale</title>
-      <link rel="icon" href="favicon.ico">
+      <link rel="icon" href="/assets/img/favicon.png">
+	  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous" />
-      <link rel="stylesheet" href="/css/bootstrap-starter.css">
-      <link rel="stylesheet" href="/css/animations.css">
+      <link rel="stylesheet" href="/css/bootstrap-theme.css">
       <noscript>Please enable JavaScript to view this site!</noscript>
    </head>
    <body>
@@ -48,7 +48,7 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha512-kBFfSXuTKZcABVouRYGnUo35KKa1FBrYgwG4PAx7Z2Heroknm0ca2Fm2TosdrrI356EDHMW383S3ISrwKcVPUw==" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.14/es5-shim.min.js" integrity="sha512-K8jgcLulFpoNw1frLky8Mm12KVkxXJnV+iqSh/Tp1debwPHMFYkh1KOnDEFPQPdhC67QKLLqbPQtL+27omCBDw==" crossorigin="anonymous"></script>
-      <script src="js/cms.js"></script>
+      <script src="/assets/js/cms.min.js"></script>
       <script>
          var blog = new CMS({
            elementId: 'cms',
@@ -60,13 +60,13 @@
              host: 'https://api.github.com',
              prefix: 'templates',
            },
-           layoutDirectory: 'layouts/bootstrap-starter',
+           layoutDirectory: 'layouts',
            errorLayout: 'error',
-           defaultView: 'posts',
+           defaultView: 'domains',
            types: [
+             { name: 'domains', layout: { list: 'page-list', single: 'domain' }},
              { name: 'posts', layout: { list: 'post-list', single: 'post' }},
              { name: 'pages', layout: { list: 'page-list', single: 'page' }},
-             { name: 'domains', layout: { list: 'page-list', single: 'domain' }},
            ],
            onload: function() {
              document.getElementById('search').addEventListener('input', function(e) {
