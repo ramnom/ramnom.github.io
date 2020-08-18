@@ -31,3 +31,16 @@ img {
 .button:active {
 	background-color: #3cb965;
 }
+
+.powered-by {
+	margin-top: 4rem;
+}
+
+.powered-by a {
+	opacity: 0.5;
+}
+
+.powered-by a:hover,
+.powered-by a:active {
+	opacity: 1;
+}
