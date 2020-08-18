@@ -12,19 +12,25 @@ img {
 	max-width: 100%;
 }
 
+a {
+	transition: all 0.25s ease-in-out;
+}
+
 .button {
 	display: inline-block;
 	min-width: 150px;
 	padding: 0.75rem 2.5rem;
-	border: 1px solid #42d071;
-	border-radius: 0.25rem;
-	box-shadow: 0.125rem 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+	border: 0.2rem solid #fff;
+	border-radius: 0.5rem;
+	box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.15);
 	background-color: #42d071;
-	font-size: 1.25rem;
+	font-size: 1.5rem;
 	font-weight: bold;
 	color: #fff;
-	text-transform: capitalize;
+	text-transform: uppercase;
 	text-decoration: none;
+	text-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
+	letter-spacing: 0.05rem;
 }
 
 .button:hover,
