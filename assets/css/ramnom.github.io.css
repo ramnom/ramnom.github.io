@@ -35,7 +35,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
-.nabar {
+.navbar {
 	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 	background: #008bdb;
 	background: -moz-linear-gradient(45deg,  #008bdb 0%, #b400db 100%);
@@ -55,6 +55,10 @@ body {
 
 #search.form-control {
 	min-width: 360px;
+}
+
+#search.form-control::placeholder {
+	color: #cecece;
 }
 
 /* Medium Devices, Desktops */
