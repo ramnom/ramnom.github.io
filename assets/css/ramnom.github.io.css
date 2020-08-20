@@ -82,4 +82,7 @@ body {
 		font-weight: 700;
 		letter-spacing: 0.1rem;
 	}
+	.navbar-toggler {
+		margin-left: 132px;
+	}
 }
