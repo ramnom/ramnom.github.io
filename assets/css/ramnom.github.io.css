@@ -35,6 +35,27 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
-.starter-template {
-	padding: 3rem 1.5rem;
+.nabar {
+	background: #008bdb;
+	background: -moz-linear-gradient(45deg,  #008bdb 0%, #b400db 100%);
+	background: -webkit-linear-gradient(45deg,  #008bdb 0%,#b400db 100%);
+	background: linear-gradient(45deg,  #008bdb 0%,#b400db 100%);
+}
+
+.navbar-brand {
+	display: inline-block;
+	margin-right: 0;
+	width: 294px;
+	height: 40px;
+	background-image: url(../img/logo-white.png);
+	background-size: 294px 40px;
+	text-indent: -9999px;
+}
+
+.navbar-nav .nav-link {
+	display: inline-block;
+}
+
+#search.form-control {
+	min-width: 360px;
 }
