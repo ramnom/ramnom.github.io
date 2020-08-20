@@ -53,6 +53,11 @@ body {
 	text-indent: -9999px;
 }
 
+.navbar-dark .navbar-toggler {
+	color: rgba(255, 255, 255, 1.85);
+	border-color: rgba(255, 255, 255, 0.25);
+}
+
 #search.form-control {
 	min-width: 360px;
 }
@@ -63,6 +68,9 @@ body {
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
+	.navbar-nav {
+		display: block;
+	}
 	.navbar-nav .nav-item,
 	.navbar-nav .nav-link {
 		display: inline-block;
@@ -70,7 +78,8 @@ body {
 	.navbar-nav .nav-link {
 		margin: 1rem;
 		padding: 1rem;
-		font-size: 2rem;
+		font-size: 1.75rem;
 		font-weight: 700;
+		letter-spacing: 0.1rem;
 	}
 }
