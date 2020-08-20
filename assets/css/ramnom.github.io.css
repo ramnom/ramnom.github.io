@@ -52,10 +52,20 @@ body {
 	text-indent: -9999px;
 }
 
-.navbar-nav .nav-link {
-	display: inline-block;
-}
-
 #search.form-control {
 	min-width: 360px;
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+	.navbar-nav .nav-item,
+	.navbar-nav .nav-link {
+		display: inline-block;
+	}
+	.navbar-nav .nav-link {
+		margin: 1rem;
+		padding: 1rem;
+		font-size: 2rem;
+		font-weight: 700;
+	}
 }
